@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h2>Create Account</h2>
+
+        <p class="sub-text">
+            Start your AI career journey with us and unlock personalized AI-powered resume analysis.
+        </p>
+
+        <form method="POST">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Create a Strong Password"
+                minlength="6"
+                required
+            >
+
+            <p class="sub-text">
+                Password must contain at least 6 characters.
+            </p>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="switch-auth">
+            Already have an account?
+            <a href="/login">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <h2>Welcome Back</h2>
+
+        <p class="sub-text">
+            Please login to your account to continue your AI career journey with us.
+        </p>
+
+        <form method="POST">
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter your Email"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Enter your Password"
+                   required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <div class="auth-links">
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <p class="switch-auth">
+            Don't have an account?
+            <a href="/signup">Sign up</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

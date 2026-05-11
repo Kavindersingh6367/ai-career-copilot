@@ -1,0 +1,2 @@
+1- step's- setup
+2- database connection
